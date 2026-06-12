@@ -18,6 +18,7 @@ class ItemResource extends JsonResource
             'auction_start_at' => $this->auction_start_at?->toISOString(),
             'auction_end_at' => $this->auction_end_at?->toISOString(),
             'status' => $this->status->value,
+            'receipt_number' => $this->receipt_number,
             'created_at' => $this->created_at?->toISOString(),
             'updated_at' => $this->updated_at?->toISOString(),
         ];

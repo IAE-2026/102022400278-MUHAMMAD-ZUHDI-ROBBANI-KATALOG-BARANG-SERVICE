@@ -18,6 +18,7 @@ class Item extends Model
         'auction_start_at',
         'auction_end_at',
         'status',
+        'receipt_number',
     ];
 
     protected $casts = [

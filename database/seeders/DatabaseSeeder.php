@@ -17,5 +17,10 @@ class DatabaseSeeder extends Seeder
                 'abilities' => ['admin'],
             ]
         );
+
+        \App\Models\Role::query()->updateOrCreate(
+            ['email' => 'warga41@ktp.iae.id'],
+            ['role' => 'admin']
+        );
     }
 }
